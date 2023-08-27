@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+.card {
+    margin: 3rem;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+
+.card--sedan { background-color: #e38826; color: #e38826; border-top-left-radius: 1rem; border-bottom-left-radius: 1rem;}
+.card--suv { background-color: #006970; color: #006970;}
+.card--lux { background-color: #004241; color: #004241; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem;}
+
+.card__elem {
+    height: 40rem;
+    width: 30rem;
+}
+.card__img {
+    margin: 2.5rem;
+}
+.card__header {
+    color: #ffffffbf;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    margin-left: 2.5rem;
+    font-size: 3.5rem;
+}
+.card__desc {
+    line-height: 2rem;
+    margin-left: 2.5rem;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ffffffbf;
+    width: 21rem;
+    padding-bottom: 4rem;
+}
+.card__btn {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-left: 3.6rem;
+    background-color: #ffffffbf; 
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    border: 2px #ffffffbf solid;
+}
+.card__btn:hover {
+    cursor: pointer;
+    color: #ffffffbf;
+    background-color: transparent;
+}
+html {
+    font-size: 62.5%;
+}
+@media only screen and (max-width: 375px){
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card--sedan { 
+        background-color: #e38826; 
+        color: #e38826; 
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem; 
+        border-bottom-left-radius: 0rem;
+    }
+    .card--suv { background-color: #006970; color: #006970;}
+    .card--lux { 
+        background-color: #004241; 
+        color: #004241; 
+        border-top-right-radius: 0rem; 
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    .card__btn {
+        font-family: 'Lexend Deca', sans-serif;
+        margin-left: 3.6rem;
+        background-color: #ffffffbf; 
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        border: 2px #ffffffbf solid;
+}
+}
